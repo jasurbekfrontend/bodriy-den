@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: Stolzl;
+  src: url(./assets/Stolzl/stolzl_regular.otf);
+}
+@font-face {
+  font-family: Stolzl Bold;
+  src: url(./assets/Stolzl/stolzl_bold.otf);
+}
+@font-face {
+  font-family: Stolzl Book;
+  src: url(./assets/Stolzl/stolzl_book.otf);
+}
+@font-face {
+  font-family: Stolzl Light;
+  src: url(./assets/Stolzl/stolzl_light.otf);
+}
+@font-face {
+  font-family: Stolzl Medium;
+  src: url(./assets/Stolzl/stolzl_medium.otf);
+}
+@font-face {
+  font-family: Stolzl Thin;
+  src: url(./assets/Stolzl/stolzl_thin.otf);
+}
+
+nav {
+  max-width: 1440px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  padding: 0 122px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+  margin-left: 210px;
+  margin-right: 44px;
+}
+.links > a {
+  color: rgb(44, 43, 42);
+  font-family: Stolzl;
+  font-size: 15px;
+  font-weight: 400;
+}
+.links > a:nth-child(2) {
+  width: 130px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.main-wrapper {
+  max-width: 1440px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.section1 {
+  width: 100vw;
+  max-width: 1440px;
+  height: 706px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.s1Body {
+  display: flex;
+  align-items: center;
+  padding: 0 112px;
+  margin-top: 197px;
+}
+.s1Left {
+  display: flex;
+  flex-direction: column;
+}
+.s1Left > b {
+  color: rgb(29, 30, 27);
+  font-family: Stolzl;
+  font-size: 40px;
+  font-weight: 400;
+  width: 450px;
+  margin-bottom: 18px;
+}
+.s1Left > p {
+  color: rgb(29, 30, 27);
+  font-family: Stolzl Light;
+  font-size: 20px;
+  font-weight: 600;
+  width: 500px;
+  margin-bottom: 53px;
+}
+.s1Container {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 143px;
+  gap: 15px;
+}
+.s1Container > :nth-child(1) > p {
+  width: 121px;
+}
+.s1Container > :nth-child(2) > p {
+  width: 146px;
+}
+.s1Container > :nth-child(4) > p {
+  width: 200px;
+}
+.s1Container > :nth-child(3) > p {
+  width: 189px;
+}
+.s1Card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 58px;
+}
+.s1Card > b {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: Stolzl Light;
+}
+.s1Card > p {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Stolzl Light;
+}
+
+.s1LeftImg{
+  position: absolute;
+  left: 0;
+  bottom: -250px;
+  z-index: -1;
+
+
+}
