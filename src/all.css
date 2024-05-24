@@ -571,6 +571,9 @@ footer {
   justify-content: space-between;
   margin-top: 40px;
 }
+.topRight > ::placeholder{
+  color: white;
+}
 .topLeft {
   display: flex;
   flex-direction: column;
@@ -844,4 +847,28 @@ footer > p {
 }
 .cardText > :nth-child(5) {
   width: 100%;
+}
+
+
+/* //////slider gape//////
+ */
+ .sliderperent{
+  width: 100%;
+  display: flex;
+  gap: 20px ;
+  background-color: red;
+ }
+ .box_Slider{
+  max-width: 1440px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  
+}
+.box_Slider{
+  transition: 1s;
+}
+.slider-body{
+  transition: 1s;
 }

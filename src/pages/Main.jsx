@@ -32,6 +32,8 @@ import blogImg1 from "../assets/img/blog1.png";
 import blogImg2 from "../assets/img/blog2.png";
 import Footer from "../components/Footer";
 
+// corusell
+
 const Main = () => {
   const navigate = useNavigate()
 
@@ -230,6 +232,7 @@ const Main = () => {
           </div>
         </div>
         <div className="slider-body">
+          
           {selectedCofee?.map((item) => (
             <div className="cardS2" key={item.id}>
               <b>{item.title}</b>
