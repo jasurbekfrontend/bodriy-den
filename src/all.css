@@ -34,7 +34,11 @@ body {
   font-family: Stolzl Thin;
   src: url(./assets/Stolzl/stolzl_thin.otf);
 }
-
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 nav {
   max-width: 1440px;
   width: 100vw;
@@ -72,6 +76,7 @@ nav {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .section1 {
   width: 100vw;
@@ -143,11 +148,186 @@ nav {
   font-family: Stolzl Light;
 }
 
-.s1LeftImg{
+.s1LeftImg {
   position: absolute;
   left: 0;
-  bottom: -250px;
+  bottom: -178px;
   z-index: -1;
+}
+.s1RightImg {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+.section2 {
+  padding-left: 122px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100vw;
+  position: relative;
+  margin-bottom: 100px;
+}
 
+.section2 > b {
+  color: rgb(29, 30, 27);
+  font-family: Stolzl;
+  font-size: 40px;
+  font-weight: 400;
+}
+.section2 > p {
+  color: rgb(44, 43, 42);
+  font-family: Stolzl Light;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 27px;
+}
 
+.menu-slider {
+  width: 712px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  border-radius: 48px;
+  box-shadow: 0px 0px 18.6px 0px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  box-shadow: 0px 0px 18.6px 0px rgba(0, 0, 0, 0.04);
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.menu-slider > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  border-radius: 48px;
+  background-color: #fff;
+  height: 100%;
+  padding: 0 22px;
+  color: rgb(29, 30, 27);
+  font-family: Stolzl;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.menu-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  height: 54px;
+  padding-right: 123px;
+}
+.arrows > img {
+  cursor: pointer;
+}
+.menu-slider > button:focus {
+  background-color: #73ff4a;
+}
+
+.slider-body {
+  max-width: 1440px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.cardS2 {
+  width: 320px;
+  height: 186px;
+  padding: 20px;
+  border-radius: 23px;
+  box-shadow: 0px 0px 18.6px 0px rgba(0, 0, 0, 0.08);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cardS2 > b {
+  color: rgb(29, 30, 27);
+  font-family: Stolzl;
+  font-size: 20px;
+  font-weight: 400;
+}
+.cardS2 > p {
+  color: rgb(130, 130, 130);
+  font-family: Stolzl;
+  font-size: 15px;
+  font-weight: 400;
+}
+.cardS2 > button {
+  width: 110px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 69px;
+  background: rgba(115, 255, 74, 0.4);
+  color: rgb(44, 43, 42);
+  font-family: Stolzl;
+  font-size: 16px;
+  font-weight: 400;
+}
+.s2Img {
+  position: absolute;
+  right: 16px;
+  top: -203px;
+  z-index: -1;
+}
+
+.section3 {
+  max-width: 1440px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding-left: 122px;
+  height: 516px;
+  margin-bottom: 131px;
+  position: relative;
+}
+.section3 > b {
+  color: rgb(29, 30, 27);
+  font-family: Stolzl;
+  font-size: 40px;
+  font-weight: 400;
+}
+.menu-container > button {
+  width: 232px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  background-color: rgba(115, 255, 74, 0.4);
+  border-radius: 60px;
+  font-family: Stolzl;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 21px;
+  margin-bottom: 43px;
+}
+.s3Card {
+  width: 312px;
+  height: 312px;
+  border-radius: 23px;
+}
+.s3Card > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 23px;
+  object-fit: cover;
+}
+.s3Img {
+  position: absolute;
+  z-index: -1;
+  left: -200px;
+  bottom: -399px;
 }
