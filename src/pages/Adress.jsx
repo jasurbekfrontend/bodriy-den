@@ -4,10 +4,11 @@ import s1RightImg from "../assets/img/s1Right.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import arrowLeft from "../assets/svg/arrowLeft.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import mapIcon from "../assets/svg/map.svg";
 
 const Adress = () => {
+  const navigate = useNavigate()
   return (
     <div className="adress-wrapper">
       <div className="section1">
@@ -15,7 +16,7 @@ const Adress = () => {
         <img className="s1RightImg" src={s1RightImg} alt="" />
         <Navbar />
         <div className="adress-body">
-          <Link>
+          <Link to='/'>
             <img src={arrowLeft} alt="" />
             назад
           </Link>

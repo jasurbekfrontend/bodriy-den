@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import s1Img from "../assets/img/s1Img.png";
 import s1LeftImg from "../assets/img/section1Left.png";
 import s1RightImg from "../assets/img/s1Right.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import arrowLeft from "../assets/svg/arrowLeft.svg";
 import arrowRight from "../assets/svg/arrowRight.svg";
 import s2Img from "../assets/img/s2Middle.png";
@@ -33,6 +33,8 @@ import blogImg2 from "../assets/img/blog2.png";
 import Footer from "../components/Footer";
 
 const Main = () => {
+  const navigate = useNavigate()
+
   const classic = [
     {
       id: 1,
@@ -241,7 +243,7 @@ const Main = () => {
         <img src={s3Img} className="s3Img" alt="" />
         <b>В данный момент по России и СНГ открыто более 150 кофеен</b>
         <div className="menu-container">
-          <button>адреса кофеен</button>
+          <button onClick={()=>navigate("/adress")}>адреса кофеен</button>
           <div className="arrows">
             <img src={arrowLeft} alt="" />
             <img src={arrowRight} alt="" />
