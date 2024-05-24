@@ -16,8 +16,6 @@ const Navbar = () => {
         <Link>франшиза</Link>
         <Link>вакансии</Link>
         <Link>контакты</Link>
-      </div>
-      <div className="icons">
         <img src={telegram} alt="" />
         <img src={message} alt="" />
       </div>

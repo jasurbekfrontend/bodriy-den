@@ -44,6 +44,7 @@ nav {
   width: 100vw;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 150px;
   background-color: transparent;
   position: absolute;
@@ -53,9 +54,7 @@ nav {
 .links {
   display: flex;
   align-items: center;
-  gap: 53px;
-  margin-left: 210px;
-  margin-right: 44px;
+  gap: 43px;
 }
 .links > a {
   color: rgb(44, 43, 42);
@@ -66,11 +65,7 @@ nav {
 .links > a:nth-child(2) {
   width: 130px;
 }
-.icons {
-  display: flex;
-  align-items: center;
-  gap: 17px;
-}
+
 .main-wrapper {
   max-width: 1440px;
   width: 100vw;
@@ -328,6 +323,225 @@ nav {
 .s3Img {
   position: absolute;
   z-index: -1;
-  left: -200px;
+  left: -60px;
   bottom: -399px;
+}
+
+.section4 {
+  max-width: 1440px;
+  width: 100vw;
+  border-radius: 100px 100px 0px 0px;
+  display: flex;
+  align-items: center;
+  height: 733px;
+  box-shadow: 0px 0px 18.6px 0px rgba(0, 0, 0, 0.08);
+  gap: 47px;
+}
+
+.leftS4 > img {
+  border-radius: 100px 0px 0px 0px;
+}
+.rightS4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.rightS4 > b {
+  color: rgb(0, 0, 0);
+  font-family: Stolzl;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.rightS4 > p {
+  color: rgb(44, 43, 42);
+  font-family: Stolzl;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 34px;
+}
+
+.marketLogos {
+  display: flex;
+  align-items: center;
+  gap: 34.21px;
+  margin-bottom: 54px;
+}
+.marketQr {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+  margin-bottom: 30px;
+}
+.rightS4 > span {
+  color: rgb(29, 30, 27);
+  font-family: Stolzl;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.rightS4 > :nth-child(6) {
+  width: 515px;
+}
+.rightS4 > h6 {
+  color: rgb(0, 0, 0);
+  font-family: Stolzl;
+  font-size: 16px;
+  font-weight: 400;
+  width: 713px;
+}
+
+.section5 {
+  max-width: 1440px;
+  width: 100vw;
+  height: 709px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 122px;
+  position: relative;
+  gap: 49px;
+}
+.menu-container > b {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(29, 30, 27);
+  font-family: Stolzl;
+  font-size: 40px;
+  font-weight: 400;
+}
+.menu-container > b > p {
+  color: rgb(44, 43, 42);
+  font-family: Stolzl;
+  font-size: 20px;
+  font-weight: 400;
+}
+.section5 > .menu-container {
+  align-items: end;
+}
+.cardS5 {
+  width: 618px;
+  height: 378px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 21px;
+  box-shadow: 0px 0px 18.6px 0px rgba(0, 0, 0, 0.08);
+}
+.section6 {
+  height: 818px;
+  max-width: 1440px;
+  width: 100vw;
+  background: url(./assets/img/s6Img.png);
+  padding-left: 123px;
+  padding-top: 187px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.section6 > b {
+  color: rgb(255, 255, 255);
+  font-family: Stolzl;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.s6Container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: rgb(255, 255, 255);
+  font-family: Stolzl Light;
+  font-size: 20px;
+  font-weight: 600;
+}
+.section6 > button {
+  width: 237px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgb(44, 43, 42);
+  font-family: Stolzl;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 50px;
+  background: rgb(1, 255, 11);
+}
+
+.section7 {
+  max-width: 1440px;
+  width: 100vw;
+  height: 833px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 112px;
+}
+.s7Card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 50px;
+}
+.s7Card > img {
+  border-radius: 50px 0 0 50px;
+}
+.s7Card > form {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  padding-top: 37px;
+}
+.s7Card > form > b {
+  color: rgb(29, 30, 27);
+  font-family: Stolzl;
+  font-size: 40px;
+  font-weight: 400;
+}
+.s7Card > form > p {
+  color: rgb(165, 165, 165);
+  font-family: Stolzl Light;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.s7Card > form > input,
+.s7Card > form > select {
+  width: 368px;
+  height: 56px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  color: rgb(44, 43, 42);
+  font-family: Stolzl;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  margin-bottom: 34px;
+}
+.s7Card > form > button {
+  width: 368px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: rgb(1, 255, 11);
+  color: rgb(44, 43, 42);
+  font-family: Stolzl;
+  font-size: 16px;
+  font-weight: 400;
 }
