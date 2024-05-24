@@ -2,12 +2,14 @@ import React from "react";
 import logo from "../assets/svg/logo.svg";
 import telegram from "../assets/svg/telegram.svg";
 import message from "../assets/svg/message.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Navbar = () => {
+
+  const navigate = useNavigate()
   return (
     <nav>
       <div className="logo">
-        <img src={logo} alt="" />
+        <img   onClick={()=> navigate('/')} src={logo} alt="" />
       </div>
       <div className="links">
         <Link>меню</Link>
@@ -16,8 +18,14 @@ const Navbar = () => {
         <Link>франшиза</Link>
         <Link>вакансии</Link>
         <Link>контакты</Link>
-        <img src={telegram} alt="" />
-        <img src={message} alt="" />
+       <div className="contact_t_w">
+   <a href="">
+   <img src={telegram} alt="" />
+   </a>
+       <a href="">
+       <img src={message} alt="" />
+       </a>
+       </div>
       </div>
     </nav>
   );
