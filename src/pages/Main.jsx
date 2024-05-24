@@ -30,6 +30,7 @@ import marketQr from "../assets/svg/marketQr.svg";
 
 import blogImg1 from "../assets/img/blog1.png";
 import blogImg2 from "../assets/img/blog2.png";
+import Footer from "../components/Footer";
 
 const Main = () => {
   const classic = [
@@ -363,6 +364,7 @@ const Main = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
