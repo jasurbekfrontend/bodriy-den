@@ -43,38 +43,41 @@ const Footer = () => {
         <div className="middleCard">
           <b>Контакты</b>
           <div className="contactContainer">
-          <div className="contactLabel">
-            <div className="contact">
-              <p>Поставщикам</p>
-              <p>sales@bodryi-den.ru</p>
+            <div className="contactLabel">
+              <div className="contact">
+                <p>Поставщикам</p>
+                <p>sales@bodryi-den.ru</p>
+              </div>
+              <div className="contact">
+                <p>Вакансии</p>
+                <p>hr@bodryi-den.ru</p>
+              </div>
+              <div className="contact">
+                <p>Предложить локацию</p>
+                <p>info@bodryi-den.ru</p>
+              </div>
             </div>
-            <div className="contact">
-              <p>Вакансии</p>
-              <p>hr@bodryi-den.ru</p>
-            </div>
-            <div className="contact">
-              <p>Предложить локацию</p>
-              <p>info@bodryi-den.ru</p>
+            <div className="contactLabel">
+              <div className="contact">
+                <p>Поддержка партнёров</p>
+                <p>support@bodryi-den.ru</p>
+              </div>
+              <div className="contact">
+                <p>Офис</p>
+                <p>+7 383 375-00-24</p>
+                <p>info@bodryi-den.ru</p>
+              </div>
             </div>
           </div>
-          <div className="contactLabel">
-            <div className="contact">
-              <p>Поддержка партнёров</p>
-              <p>support@bodryi-den.ru</p>
-            </div>
-            <div className="contact">
-              <p>Офис</p>
-              <p>+7 383 375-00-24</p>
-              <p>info@bodryi-den.ru</p>
-            </div>
-          </div>
-          </div>
-
         </div>
         <div className="bottomCard">
           <div className="footerIcons">
-            <img src={telegram} alt="" />
-            <img src={message} alt="" />
+            <div className="footerIcon">
+              <img src={telegram} alt="" />
+            </div>
+            <div className="footerIcon">
+              <img src={message} alt="" />
+            </div>
           </div>
           <div className="contact">
             <p>Адрес</p>

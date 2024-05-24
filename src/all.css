@@ -550,9 +550,10 @@ footer {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 29px;
+  height: 658px;
   padding: 0 122px;
   background: url(./assets/img/footerBackround.png);
 }
@@ -601,28 +602,28 @@ footer {
   outline: none;
 }
 
-.footerCard{
+.footerCard {
   width: 100%;
   height: 394px;
   display: flex;
   flex-direction: column;
   padding: 32px 40px;
-  background-color: #2C2B2AA1;
+  background-color: #2c2b2aa1;
   gap: 20px;
   border-radius: 16px;
 }
-.topCard{
+.topCard {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.leftTop{
+.leftTop {
   display: flex;
   align-items: center;
   gap: 93px;
 }
-.footerLinks{
+.footerLinks {
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -631,7 +632,7 @@ footer {
   font-weight: 400;
   color: #fff;
 }
-.topCard > button{
+.topCard > button {
   width: 237px;
   height: 58px;
   display: flex;
@@ -645,25 +646,25 @@ footer {
   font-weight: 400;
   font-size: 16px;
 }
-.middleCard{
+.middleCard {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: end;
   gap: 13px;
 }
-.middleCard > b{
+.middleCard > b {
   font-family: Stolzl;
   font-size: 24px;
   font-weight: 400;
   color: #fff;
 }
-.contactLabel{
+.contactLabel {
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -671,9 +672,169 @@ footer {
   font-weight: 400;
   font-size: 12px;
   color: #fff;
+  text-align: right;
 }
-.contactContainer{
+.contactLabel:nth-child(2) {
+  gap: 30px;
+}
+.contactContainer {
+  display: flex;
+  align-items: start;
+  gap: 13px;
+}
+.bottomCard {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 13px;
+  justify-content: space-between;
+}
+.footerIcons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footerIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerIcon > img {
+  width: 25px;
+  height: 25px;
+}
+footer > p {
+  font-size: 10px;
+  font-family: Stolzl;
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.adress-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1440px;
+  width: 100vw;
+  margin-top: 225px;
+  padding-left: 122px;
+}
+.adress-body > a {
+  color: #828282;
+  font-size: 16px;
+  font-family: Stolzl;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.adress-body > b {
+  color: rgb(29, 30, 27);
+  font-family: Stolzl;
+  font-size: 40px;
+  font-weight: 400;
+}
+.adress-body > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.adressContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+  gap: 60px;
+}
+.adressBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(44, 43, 42);
+  font-family: Stolzl;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card {
+  width: 602px;
+  height: 401px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 21px;
+  border-radius: 30px;
+  /* gap: 12px; */
+  background-color: #fff;
+}
+.cancel {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 5.84px;
+  padding-right: 30px;
+}
+.cardText > b {
+  color: rgb(29, 30, 27);
+  font-family: Stolzl;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 84px;
+  width: 339px;
+}
+.cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.cardText > p {
+  padding-left: 84px;
+  width: 400px;
+}
+.cardText > p,
+.cardArrows > p {
+  color: rgb(130, 130, 130);
+  font-family: Stolzl;
+  font-size: 15px;
+  font-weight: 400;
+}
+.cardArrows > p {
+  height: 109px;
+}
+.cardArrows {
+  display: flex;
+  align-items: start;
+  gap: 39px;
+  width: 100%;
+  padding: 0 30px;
+}
+.cardButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+}
+.cardButtons > button {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #74ff4a68;
+  color: #000;
+  gap: 8px;
+  border-radius: 50px;
+  font-family: Stolzl;
+  font-weight: 400;
+  font-size: 16px;
+}
+.cardButtons > button:focus {
+  background-color: #73ff4a;
+}
+.cardText > :nth-child(5) {
+  width: 100%;
 }
