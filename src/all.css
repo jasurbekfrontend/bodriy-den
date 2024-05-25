@@ -239,6 +239,7 @@ nav {
   max-width: 1440px;
   width: 100vw;
   display: flex;
+  overflow: hidden;
   align-items: center;
   gap: 30px;
 }
@@ -317,8 +318,8 @@ nav {
   margin-bottom: 43px;
 }
 .s3Card {
-  width: 312px;
-  height: 312px;
+  width: 302px;
+  height: 302px;
   border-radius: 23px;
 }
 .s3Card > img {
@@ -429,7 +430,7 @@ nav {
   align-items: end;
 }
 .cardS5 {
-  width: 618px;
+  width: 648px;
   height: 378px;
   display: flex;
   align-items: center;
@@ -571,9 +572,6 @@ footer {
   justify-content: space-between;
   margin-top: 40px;
 }
-.topRight > ::placeholder{
-  color: white;
-}
 .topLeft {
   display: flex;
   flex-direction: column;
@@ -702,6 +700,9 @@ footer {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.topRight > ::placeholder{
+  color: white;
 }
 .footerIcon {
   width: 40px;
@@ -849,16 +850,7 @@ footer > p {
   width: 100%;
 }
 
-
-/* //////slider gape//////
- */
- .sliderperent{
-  width: 100%;
-  display: flex;
-  gap: 20px ;
-  background-color: red;
- }
- .box_Slider{
+.box_Slider{
   max-width: 1440px;
   width: 100vw;
   display: flex;
@@ -870,5 +862,12 @@ footer > p {
   transition: 1s;
 }
 .slider-body{
+  transition: 1s;
+}
+.card_dody{
+  display: flex;
+ transition: 1s;
+}
+.coffe_box{
   transition: 1s;
 }

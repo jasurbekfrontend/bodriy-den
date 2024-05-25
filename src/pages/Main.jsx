@@ -32,11 +32,49 @@ import blogImg1 from "../assets/img/blog1.png";
 import blogImg2 from "../assets/img/blog2.png";
 import Footer from "../components/Footer";
 
-// corusell
+// corusel
+
+
 
 const Main = () => {
   const navigate = useNavigate()
+  const images = [{ img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }];
+  const blog = [{ img1: blogImg1, img2: blogImg2 }, { img1: blogImg1, img2: blogImg2 }, { img1: blogImg1, img2: blogImg2 }, { img1: blogImg1, img2: blogImg2 }]
 
+
+  const [sliderScore, setSliderScore] = useState(0);
+  const [sliderScore_blog, setSliderScore_blog] = useState(0);
+  const [sliderScore_coffe, setSliderScore_coffe] = useState(0);
+  const slider = () => {
+    if (sliderScore < images.length - 1) {
+      setSliderScore(sliderScore + 1);
+    }
+  };
+  const antislider = () => {
+    if (sliderScore > 0) {
+      setSliderScore(sliderScore - 1);
+    }
+  };
+  const card_slider = () => {
+    if (sliderScore_blog < blog.length - 1) {
+      setSliderScore_blog(sliderScore_blog + 1);
+    }
+  };
+  const card_antislider = () => {
+    if (sliderScore_blog > 0) {
+      setSliderScore_blog(sliderScore_blog - 1);
+    }
+  };
+  const coffe_slider = () => {
+    if (sliderScore_coffe < selectedCofee.length - 1) {
+      setSliderScore_coffe(sliderScore_coffe + 1);
+    }
+  };
+  const coffe_antislider = () => {
+    if (sliderScore_coffe > 0) {
+      setSliderScore_coffe(sliderScore_coffe - 1);
+    }
+  };
   const classic = [
     {
       id: 1,
@@ -48,6 +86,70 @@ const Main = () => {
     },
     {
       id: 2,
+      title: "Шоколадный айс-латте с сырной пенкой",
+      subtitle: "ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02",
+      desc: "Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.",
+      sostav:
+        "Состав: Какао, Двойной эспрессо, Молоко 3,2% ,Лед, сироп 'Клубника'. Сырная пенка: Сливочный сыр, Взбитые сливки, Соль, Сахар, Молоко 3,2%",
+    },
+    {
+      id: 3,
+      title: "Шоколадный айс-латте с сырной пенкой",
+      subtitle: "ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02",
+      desc: "Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.",
+      sostav:
+        "Состав: Какао, Двойной эспрессо, Молоко 3,2% ,Лед, сироп 'Клубника'. Сырная пенка: Сливочный сыр, Взбитые сливки, Соль, Сахар, Молоко 3,2%",
+    },
+    {
+      id: 3,
+      title: "Шоколадный айс-латте с сырной пенкой",
+      subtitle: "ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02",
+      desc: "Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.",
+      sostav:
+        "Состав: Какао, Двойной эспрессо, Молоко 3,2% ,Лед, сироп 'Клубника'. Сырная пенка: Сливочный сыр, Взбитые сливки, Соль, Сахар, Молоко 3,2%",
+    },
+    {
+      id: 3,
+      title: "Шоколадный айс-латте с сырной пенкой",
+      subtitle: "ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02",
+      desc: "Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.",
+      sostav:
+        "Состав: Какао, Двойной эспрессо, Молоко 3,2% ,Лед, сироп 'Клубника'. Сырная пенка: Сливочный сыр, Взбитые сливки, Соль, Сахар, Молоко 3,2%",
+    },
+    {
+      id: 3,
+      title: "Шоколадный айс-латте с сырной пенкой",
+      subtitle: "ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02",
+      desc: "Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.",
+      sostav:
+        "Состав: Какао, Двойной эспрессо, Молоко 3,2% ,Лед, сироп 'Клубника'. Сырная пенка: Сливочный сыр, Взбитые сливки, Соль, Сахар, Молоко 3,2%",
+    },
+    {
+      id: 3,
+      title: "Шоколадный айс-латте с сырной пенкой",
+      subtitle: "ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02",
+      desc: "Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.",
+      sostav:
+        "Состав: Какао, Двойной эспрессо, Молоко 3,2% ,Лед, сироп 'Клубника'. Сырная пенка: Сливочный сыр, Взбитые сливки, Соль, Сахар, Молоко 3,2%",
+    },
+    {
+      id: 3,
+      title: "Шоколадный айс-латте с сырной пенкой",
+      subtitle: "ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02",
+      desc: "Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.",
+      sostav:
+        "Состав: Какао, Двойной эспрессо, Молоко 3,2% ,Лед, сироп 'Клубника'. Сырная пенка: Сливочный сыр, Взбитые сливки, Соль, Сахар, Молоко 3,2%",
+    },
+    {
+      id: 3,
+      title: "Шоколадный айс-латте с сырной пенкой",
+      subtitle: "ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02",
+      desc: "Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.",
+      sostav:
+        "Состав: Какао, Двойной эспрессо, Молоко 3,2% ,Лед, сироп 'Клубника'. Сырная пенка: Сливочный сыр, Взбитые сливки, Соль, Сахар, Молоко 3,2%",
+    },
+    {
+      id: 3,
       title: "Шоколадный айс-латте с сырной пенкой",
       subtitle: "ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02",
       desc: "Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.",
@@ -174,6 +276,7 @@ const Main = () => {
     },
   ];
   const [selectedCofee, setSelectedCofee] = useState(classic);
+
   return (
     <div className="main-wrapper">
       <div className="section1">
@@ -227,17 +330,18 @@ const Main = () => {
             </button>
           </div>
           <div className="arrows">
-            <img src={arrowLeft} alt="" />
-            <img src={arrowRight} alt="" />
+            <button onClick={() => coffe_antislider()}><img src={arrowLeft} alt="" /></button>
+            <button onClick={() => coffe_slider()}><img src={arrowRight} alt="" /></button>
           </div>
         </div>
         <div className="slider-body">
-          
           {selectedCofee?.map((item) => (
-            <div className="cardS2" key={item.id}>
-              <b>{item.title}</b>
-              <p>{item.subtitle}</p>
-              <button>состав</button>
+            <div className="coffe_box" style={{ transform: `translateX(-${sliderScore_coffe * 109.2}%)` }}>
+              <div className="cardS2" key={item.id}>
+                <b>{item.title}</b>
+                <p>{item.subtitle}</p>
+                <button>состав</button>
+              </div>
             </div>
           ))}
         </div>
@@ -246,25 +350,34 @@ const Main = () => {
         <img src={s3Img} className="s3Img" alt="" />
         <b>В данный момент по России и СНГ открыто более 150 кофеен</b>
         <div className="menu-container">
-          <button onClick={()=>navigate("/adress")}>адреса кофеен</button>
+          <button onClick={() => navigate("/adress")}>адреса кофеен</button>
           <div className="arrows">
-            <img src={arrowLeft} alt="" />
-            <img src={arrowRight} alt="" />
+            <button onClick={() => antislider()}><img src={arrowLeft} alt="" /></button>
+            <button onClick={() => slider()}><img src={arrowRight} alt="" /></button>
           </div>
         </div>
+
+
         <div className="slider-body">
-          <div className="s3Card">
-            <img src={s3Img1} alt="" />
-          </div>
-          <div className="s3Card">
-            <img src={s3Img2} alt="" />
-          </div>
-          <div className="s3Card">
-            <img src={s3Img3} alt="" />
-          </div>
-          <div className="s3Card">
-            <img src={s3Img4} alt="" />
-          </div>
+          {images.map((item) => (
+            <div className="box_Slider" style={{ transform: `translateX(-${sliderScore * 102.2}%)` }}>
+              <div className="s3Card">
+                <img src={item.img1} alt="" />
+              </div>
+              <div className="s3Card">
+                <img src={item.img2} alt="" />
+              </div>
+              <div className="s3Card">
+                <img src={item.img3} alt="" />
+              </div>
+              <div className="s3Card">
+                <img src={item.img3} alt="" />
+              </div>
+            </div>
+
+          ))}
+
+
         </div>
       </div>
 
@@ -308,32 +421,39 @@ const Main = () => {
           </b>
 
           <div className="arrows">
-            <img src={arrowLeft} alt="" />
-            <img src={arrowRight} alt="" />
+            <button onClick={() => card_antislider()}><img src={arrowLeft} alt="" /></button>
+            <button onClick={() => card_slider()}><img src={arrowRight} alt="" /></button>
           </div>
         </div>
         <div className="slider-body">
-          <div className="cardS5">
-            <img src={blogImg1} alt="" />
-            <p>
-              Встречайте новую бодрую кофейню в Москве! <br />
-              Это новая точка с двумя этажами и освежающим и стильным
-              интерьером. В меню — вечная бодрящая классика, крутые весенние
-              спешелы и очень вкусные десерты. Приходите в гости
-              на Новоданиловскую набережную 10А и попробуйте сами
-            </p>
-          </div>
-          <div className="cardS5">
-            <img src={blogImg2} alt="" />
-            <p>
-              Если вы впервые открываете кофейню и ищете бариста, то можете
-              чувствовать себя неуверенно: как выбрать сотрудника? Чему
-              его научить? Как описать вакансию? Мы отлично понимаем вас,
-              поэтому поделимся опытом и расскажем, как подбираем бариста
-              для Бодрых кофеен...
-              <span>показать полностью</span>
-            </p>
-          </div>
+          {blog.map((item) => (
+            <div className="card_dody" style={{ transform: `translateX(-${sliderScore_blog * 102.2}%)` }}>
+
+
+              <div className="cardS5">
+                <img src={item.img1} alt="" />
+                <p>
+                  Встречайте новую бодрую кофейню в Москве! <br />
+                  Это новая точка с двумя этажами и освежающим и стильным
+                  интерьером. В меню — вечная бодрящая классика, крутые весенние
+                  спешелы и очень вкусные десерты. Приходите в гости
+                  на Новоданиловскую набережную 10А и попробуйте сами
+                </p>
+              </div>
+              <div className="cardS5">
+                <img src={item.img2} alt="" />
+                <p>
+                  Если вы впервые открываете кофейню и ищете бариста, то можете
+                  чувствовать себя неуверенно: как выбрать сотрудника? Чему
+                  его научить? Как описать вакансию? Мы отлично понимаем вас,
+                  поэтому поделимся опытом и расскажем, как подбираем бариста
+                  для Бодрых кофеен...
+                  <span>показать полностью</span>
+                </p>
+              </div>
+            </div>
+          ))}
+
         </div>
       </div>
       <div className="section6">
