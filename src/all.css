@@ -9,6 +9,13 @@ body {
   display: flex;
   justify-content: center;
 }
+button {
+    background-color: transparent;
+    border: none; /* If you want to remove the border as well */
+    color: inherit; /* This ensures the text color is inherited from its parent */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+}
+
 
 @font-face {
   font-family: Stolzl;
@@ -430,8 +437,9 @@ nav {
   align-items: end;
 }
 .cardS5 {
+  /* background-color: red; */
   width: 648px;
-  height: 378px;
+  height: 328px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -846,7 +854,9 @@ footer > p {
 .cardButtons > button:focus {
   background-color: #73ff4a;
 }
-.cardText > :nth-child(5) {
+
+
+.cardText:nth-child(5) {
   width: 100%;
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useRef,useEffect} from "react";
 import Navbar from "../components/Navbar";
 import s1Img from "../assets/img/s1Img.png";
 import s1LeftImg from "../assets/img/section1Left.png";
@@ -86,14 +86,6 @@ const Main = () => {
     },
     {
       id: 2,
-      title: "Шоколадный айс-латте с сырной пенкой",
-      subtitle: "ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02",
-      desc: "Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.",
-      sostav:
-        "Состав: Какао, Двойной эспрессо, Молоко 3,2% ,Лед, сироп 'Клубника'. Сырная пенка: Сливочный сыр, Взбитые сливки, Соль, Сахар, Молоко 3,2%",
-    },
-    {
-      id: 3,
       title: "Шоколадный айс-латте с сырной пенкой",
       subtitle: "ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02",
       desc: "Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.",
@@ -276,6 +268,13 @@ const Main = () => {
     },
   ];
   const [selectedCofee, setSelectedCofee] = useState(classic);
+  const firstButtonRef = useRef(null);
+
+  useEffect(() => {
+    if (firstButtonRef.current) {
+      firstButtonRef.current.focus();
+    }
+  }, []);
 
   return (
     <div className="main-wrapper">
@@ -320,7 +319,7 @@ const Main = () => {
         <p>ознакомиться с составами и кбжу</p>
         <div className="menu-container">
           <div className="menu-slider">
-            <button onClick={() => setSelectedCofee(classic)}>классика</button>
+            <button ref={firstButtonRef} onClick={() => setSelectedCofee(classic)}>классика</button>
             <button onClick={() => setSelectedCofee(seasonal)}>
               сезонное меню
             </button>
