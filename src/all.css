@@ -514,8 +514,8 @@ nav {
   padding: 0 16px;
   border: none;
   border-radius: 50px;
-  color: var(--Dark, #23262a);
-  font-size: 16px;
+   color: rgb(44, 43, 42);
+  font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   outline: none; /* Border removal when input is focused */
@@ -532,7 +532,7 @@ nav {
 
 .select__list2 {
   position: absolute;
-  top: calc(100% + 5px);
+  top: calc(100% + 0px);
   left: 0;
   z-index: 999;
   width: 100%;
@@ -540,7 +540,7 @@ nav {
   overflow-y: auto;
   border: 1px solid transparent;
   border-radius: 8px;
-  background: var(--White, #fff);
+  background: var(--White, #f9f9f964);
   transition: all 0.3s ease;
 }
 
