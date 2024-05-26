@@ -238,9 +238,9 @@ nav {
 .arrows > img {
   cursor: pointer;
 }
-.menu-slider > button:focus {
+/* .menu-slider > button:focus {
   background-color: #73ff4a;
-}
+} */
 
 .slider-body {
   max-width: 1440px;
@@ -541,7 +541,7 @@ nav {
   overflow-y: auto;
   border: 1px solid transparent;
   border-radius: 8px;
-  background: var(--White, #ffffff);
+  background: var(--White, #F4F4F4);
   transition: all 0.3s ease;
 }
 
@@ -556,17 +556,11 @@ nav {
   align-items: center;
 }
 
-.select__list2 > :nth-child(even) {
-  background: var(--Light, #f4f5f7);
+.select__list2 > li:hover{
+  background-color: white;
 }
 
-.select__list2 > :nth-child(even):hover {
-  /* background: var(--Light, #f4f5f7e9); */
-}
 
-.select__list2 > :nth-child(odd):hover {
-  background: var(--Light, #fbfbfb);
-}
 
 .select2.active .select__list2 {
   max-height: 200px;
@@ -973,3 +967,6 @@ footer > p {
 .coffe_box{
   transition: 1s;
 }
+
+
+

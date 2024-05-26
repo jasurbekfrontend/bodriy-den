@@ -282,13 +282,16 @@ const Main = () => {
     },
   ];
   const [selectedCofee, setSelectedCofee] = useState(classic);
-  const firstButtonRef = useRef(null);
 
-  useEffect(() => {
-    if (firstButtonRef.current) {
-      firstButtonRef.current.focus();
-    }
-  }, []);
+  const coffeeTypes = [
+    { name: 'Классика', type: 'classic' },
+    { name: 'Сезонное меню', type: 'seasonal' },
+    { name: 'Хиты', type: 'hot' },
+    { name: 'Милкшейки', type: 'milkshake' }
+  ];
+  const [selectedCoffee, setSelectedCoffee] = useState('classic');
+
+ 
 
   return (
     <div className="main-wrapper">
@@ -333,15 +336,16 @@ const Main = () => {
         <p>ознакомиться с составами и кбжу</p>
         <div className="menu-container">
           <div className="menu-slider">
-            <button ref={firstButtonRef} onClick={() => setSelectedCofee(classic)}>классика</button>
-            <button onClick={() => setSelectedCofee(seasonal)}>
-              сезонное меню
-            </button>
-            <button onClick={() => setSelectedCofee(hot)}>хиты</button>
-            <button onClick={() => setSelectedCofee(milkshake)}>
-              милкшейки
-            </button>
-          </div>
+            {coffeeTypes.map((coffee) => (
+              <button
+                key={coffee.type}
+                style={selectedCoffee === coffee.type ? { backgroundColor: "#73ff4a" } : { backgroundColor: "" }}
+                onClick={() => setSelectedCoffee(coffee.type)}
+              >
+                {coffee.name}
+              </button>
+            ))}
+                      </div>
           <div className="arrows">
             <button onClick={() => coffe_antislider()}><img src={arrowLeft} alt="" /></button>
             <button onClick={() => coffe_slider()}><img src={arrowRight} alt="" /></button>

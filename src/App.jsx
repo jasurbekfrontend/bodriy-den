@@ -1,8 +1,7 @@
-import { useState } from "react";
 import Main from "./pages/Main";
 import Adress from "./pages/Adress";
-import Card from "./components/Card";
 import { Route, Routes } from "react-router-dom";
+
 
 function App() {
   return (
@@ -11,7 +10,8 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/adress" element={<Adress />} />
       </Routes>
-      {/* <Card /> */}
+      
+    
     </div>
   );
 }
