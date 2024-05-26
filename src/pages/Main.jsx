@@ -31,6 +31,9 @@ import marketQr from "../assets/svg/marketQr.svg";
 import blogImg1 from "../assets/img/blog1.png";
 import blogImg2 from "../assets/img/blog2.png";
 import Footer from "../components/Footer";
+import { PatternFormat } from 'react-number-format';
+import { MdKeyboardArrowDown } from 'react-icons/md';
+
 
 // corusel
 
@@ -40,7 +43,18 @@ const Main = () => {
   const navigate = useNavigate()
   const images = [{ img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }, { img1: s3Img1, img2: s3Img2, img3: s3Img3 }];
   const blog = [{ img1: blogImg1, img2: blogImg2 }, { img1: blogImg1, img2: blogImg2 }, { img1: blogImg1, img2: blogImg2 }, { img1: blogImg1, img2: blogImg2 }]
+ /// select function
+  const [selectedValue, setSelectedValue] = useState('должность');
+  const [isActive, setIsActive] = useState(false);
 
+  const handleItemClick = (value) => {
+    setSelectedValue(value);
+    setIsActive(true); // Close the dropdown after selecting an item
+  };
+
+  const toggleDropdown = () => {
+    setIsActive(!isActive);
+  };
 
   const [sliderScore, setSliderScore] = useState(0);
   const [sliderScore_blog, setSliderScore_blog] = useState(0);
@@ -477,13 +491,24 @@ const Main = () => {
             <b>Работай у нас</b>
             <p>вакансии в кофейне и офисе</p>
             <input type="text" placeholder="город" />
-            <select>
-              <option value="">должность</option>
-              <option value="">должность</option>
-              <option value="">должность</option>
-            </select>
+            <label className={`select2 ${isActive ? 'active' : ''}`}>
+              <input
+                type="text"
+                placeholder="Деталь столешницы 1"
+                readOnly
+                value={selectedValue}
+                name="name__product"
+                onClick={toggleDropdown}
+              />
+              <MdKeyboardArrowDown onClick={toggleDropdown} /> {/* Ikona */}
+              <ol className="select__list2">
+                <li onClick={() => handleItemClick('1')}>1</li>
+                <li onClick={() => handleItemClick('2')}>2</li>
+                <li onClick={() => handleItemClick('3')}>3</li>
+              </ol>
+            </label>
             <input type="text" placeholder="ваше имя" />
-            <input type="text" defaultValue={"+7 ("} />
+            <PatternFormat format="+7 (###) #### ###" allowEmptyFormatting mask="_" />;
             <button>отправить</button>
           </form>
         </div>

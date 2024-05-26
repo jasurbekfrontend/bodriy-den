@@ -3,6 +3,7 @@ import logo from "../assets/svg/logo-in-dark.svg";
 import arrowRight from "../assets/svg/arrowRight.svg";
 import telegram from "../assets/svg/telegram.svg";
 import message from "../assets/svg/message.svg";
+import { PatternFormat } from 'react-number-format';
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
         </div>
         <div className="topRight">
           <input type="text" placeholder="Ваше имя" />
-          <input type="text" placeholder="+7 999 999-99-99" />
+          <PatternFormat format="+7 (###) #### ###" allowEmptyFormatting mask="_" />;
         </div>
       </div>
       <div className="footerCard">
