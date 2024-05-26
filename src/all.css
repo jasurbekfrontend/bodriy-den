@@ -690,9 +690,17 @@ footer {
   color: #fff;
   text-align: right;
 }
-.contactLabel:nth-child(2) {
-  gap: 30px;
+.contactLabel:nth-child(2){
+  gap: 22px;
 }
+.contactLabel:nth-child(2) > .contact:first-child > p:first-child{
+  max-width: 100px;
+}
+.contactLabel:nth-child(2) > .contact:first-child {
+  align-items: end;
+}
+
+
 .contactContainer {
   display: flex;
   align-items: start;
