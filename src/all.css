@@ -505,6 +505,7 @@ nav {
   border-radius: 50px;
   background: var(--White, #fff);
   margin-bottom: 34px;
+  /* overflow: hidden; */
 
 }
 
@@ -540,7 +541,7 @@ nav {
   overflow-y: auto;
   border: 1px solid transparent;
   border-radius: 8px;
-  background: var(--White, #f9f9f964);
+  background: var(--White, #ffffff);
   transition: all 0.3s ease;
 }
 
@@ -560,7 +561,7 @@ nav {
 }
 
 .select__list2 > :nth-child(even):hover {
-  background: var(--Light, #f4f5f7e9);
+  /* background: var(--Light, #f4f5f7e9); */
 }
 
 .select__list2 > :nth-child(odd):hover {
